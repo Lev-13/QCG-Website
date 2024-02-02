@@ -1,0 +1,109 @@
+img{
+    height: 90px;
+    width: 165px;
+    margin-left: 50px;
+    margin-top: 0px;
+  
+}
+
+ul{
+    width: 500px;
+    display: flex;
+    margin-top: 10px;
+    
+    justify-content: space-around;
+    text-decoration: none;
+    font-family: Hack, monospace;
+
+}
+.navbar{
+    position: sticky;
+    /* background-color: #ad26de7d;*/
+    background-color: #914fb2;
+    /* opacity: 0.5; */
+}
+.menu {
+    color: #b249e6;
+    text-align: center;
+  }
+  a{
+    /* margin: 16px; */
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    position: relative;
+    text-decoration: none;
+  
+    &::before {
+      content: attr(data-item);
+      transition: all 1s ease-in-out;
+      color: #b249e6;
+      position: absolute;
+      font-weight: 600;
+      /* top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; */
+      width: 0;
+      overflow: hidden;
+    }
+  
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+.title{
+    
+    height: 680px;
+    width: 1600px;
+    background-image: url("logo1.png");
+    background-size: contain;
+    backdrop-filter: blur;
+    font-size: 50px;
+    text-shadow:rgb(176, 37, 201)0;
+
+    
+}
+.greet{
+    position: relative;
+    top: 195px;
+    left: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.b{
+    color: #000000;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    position: relative;
+    left: 20px;
+    top: 90px;
+    text-decoration: none;
+    animation: name 2s cubic-bezier(0.3, -0.09, 0.67, 1.07);
+   
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+@keyframes name {
+  from { width: 0; color: #000000; }
+  to { width: 100%; color: #c85aff; }
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fillAnimation 4s linear forwards;
+}
+
+
+body{
+    background-color: black;
+}
